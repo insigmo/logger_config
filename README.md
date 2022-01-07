@@ -24,24 +24,24 @@ Usage
 -----
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import logging
 
-    import logging
-    
-    from logger_config import configure_logging
-    
-    logger_name = 'root_logger'
-    configure_logging(logger_name, log_dir='logs', log_level=logging.DEBUG)
-    logger = logging.getLogger(logger_name)
-    
-    
-    logger.warning('This is warning')
-    logger.error('This is exception')
-    logger.info('This is info message')
-    logger.debug('This is debug message')
+from logger_config import configure_logging
+
+logger_name = 'root_logger'
+configure_logging(logger_name, log_dir='logs', log_level=logging.DEBUG)
+logger = logging.getLogger(logger_name)
+
+
+logger.warning('This is warning')
+logger.error('This is exception')
+logger.info('This is info message')
+logger.debug('This is debug message')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Console Output**
-
-    [2022-01-07 22:41:52,153] [MainThread] [WARNING] This is warning
-    [2022-01-07 22:41:52,153] [MainThread] [ERROR] This is exception
-    [2022-01-07 22:41:52,153] [MainThread] [INFO] This is info message
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2022-01-07 22:41:52,153] [MainThread] [WARNING] This is warning
+[2022-01-07 22:41:52,153] [MainThread] [ERROR] This is exception
+[2022-01-07 22:41:52,153] [MainThread] [INFO] This is info message
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
