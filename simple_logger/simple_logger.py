@@ -21,9 +21,9 @@ def configure_logging(log_name='root_logger', log_dir: str = None, log_level=log
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
 
-        log_file = os.path.join(log_dir, f'log_{arrow.now().format("YYYY-MM-DDTHH_mm")}.log')
+        log_file = os.path.join(log_dir, 'log_{}.log'.format(arrow.now().format("YYYY-MM-DDTHH_mm")))
         h_file = logging.FileHandler(log_file, mode='w', encoding='utf-8')
         h_file.setFormatter(formatter)
         root_logger.addHandler(h_file)
 
-    logging.getLogger(log_name).debug(f'"{log_name}" loggers configured')
+    logging.getLogger(log_name).debug('"{}" loggers configured'.format(log_name))
