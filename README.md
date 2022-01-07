@@ -1,1 +1,1 @@
-# simple_logger
+# logger-config
