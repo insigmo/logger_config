@@ -15,7 +15,7 @@ Installation
 
 or
 
-download the `latest release`_ and run
+download the `latest release` and run
 
     python setup.py install
 
