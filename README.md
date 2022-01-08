@@ -44,4 +44,5 @@ logger.debug('This is debug message')
 [2022-01-07 22:41:52,153] [MainThread] [WARNING] This is warning
 [2022-01-07 22:41:52,153] [MainThread] [ERROR] This is exception
 [2022-01-07 22:41:52,153] [MainThread] [INFO] This is info message
+[2022-01-07 22:41:52,153] [MainThread] [DEBUG] This is debug message
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
